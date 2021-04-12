@@ -29,7 +29,6 @@ namespace Quan_ly_khach_san
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDangNhap));
             this.txMatKhau = new System.Windows.Forms.TextBox();
             this.txTaiKhoan = new System.Windows.Forms.TextBox();
             this.btDangNhap = new System.Windows.Forms.Button();
@@ -98,7 +97,6 @@ namespace Quan_ly_khach_san
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(550, 383);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbMatKhau);

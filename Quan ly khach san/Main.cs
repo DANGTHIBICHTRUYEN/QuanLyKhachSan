@@ -71,5 +71,10 @@ namespace Quan_ly_khach_san
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
