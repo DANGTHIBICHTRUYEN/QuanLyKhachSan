@@ -1,6 +1,6 @@
 ﻿namespace Quan_ly_khach_san
 {
-    partial class Main
+    partial class fMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quanLyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSachPhongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,15 +86,16 @@
             // danhSachPhongToolStripMenuItem
             // 
             this.danhSachPhongToolStripMenuItem.Name = "danhSachPhongToolStripMenuItem";
-            this.danhSachPhongToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.danhSachPhongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.danhSachPhongToolStripMenuItem.Text = "Danh Sách Phòng";
             this.danhSachPhongToolStripMenuItem.Click += new System.EventHandler(this.danhSáchPhòngToolStripMenuItem_Click);
             // 
             // khachHangToolStripMenuItem
             // 
             this.khachHangToolStripMenuItem.Name = "khachHangToolStripMenuItem";
-            this.khachHangToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.khachHangToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.khachHangToolStripMenuItem.Text = "Khách Hàng";
+            this.khachHangToolStripMenuItem.Click += new System.EventHandler(this.khachHangToolStripMenuItem_Click);
             // 
             // chucNangToolStripMenuItem
             // 
@@ -106,24 +106,28 @@
             this.chucNangToolStripMenuItem.Name = "chucNangToolStripMenuItem";
             this.chucNangToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.chucNangToolStripMenuItem.Text = "Chức Năng";
+            this.chucNangToolStripMenuItem.Click += new System.EventHandler(this.chucNangToolStripMenuItem_Click);
             // 
             // lapPhieuThuePhongToolStripMenuItem1
             // 
             this.lapPhieuThuePhongToolStripMenuItem1.Name = "lapPhieuThuePhongToolStripMenuItem1";
             this.lapPhieuThuePhongToolStripMenuItem1.Size = new System.Drawing.Size(193, 22);
             this.lapPhieuThuePhongToolStripMenuItem1.Text = "Lập Phiếu Thuê Phòng";
+            this.lapPhieuThuePhongToolStripMenuItem1.Click += new System.EventHandler(this.lapPhieuThuePhongToolStripMenuItem1_Click);
             // 
             // traPhongToolStripMenuItem1
             // 
             this.traPhongToolStripMenuItem1.Name = "traPhongToolStripMenuItem1";
             this.traPhongToolStripMenuItem1.Size = new System.Drawing.Size(193, 22);
             this.traPhongToolStripMenuItem1.Text = "Trả Phòng";
+            this.traPhongToolStripMenuItem1.Click += new System.EventHandler(this.traPhongToolStripMenuItem1_Click);
             // 
             // lapHoaDonToolStripMenuItem
             // 
             this.lapHoaDonToolStripMenuItem.Name = "lapHoaDonToolStripMenuItem";
             this.lapHoaDonToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.lapHoaDonToolStripMenuItem.Text = "Lập Hóa Đơn";
+            this.lapHoaDonToolStripMenuItem.Click += new System.EventHandler(this.lapHoaDonToolStripMenuItem_Click);
             // 
             // thongKeToolStripMenuItem1
             // 
@@ -227,12 +231,11 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.Location = new System.Drawing.Point(88, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 88);
+            this.label1.Size = new System.Drawing.Size(373, 44);
             this.label1.TabIndex = 1;
-            this.label1.Text = "        Phần Mềm\r\nQuản Lý Khách Sạn";
+            this.label1.Text = "Quản Lý Khách Sạn";
             // 
             // toolStripSeparator1
             // 
@@ -259,7 +262,7 @@
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(270, 6);
             // 
-            // Main
+            // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -267,7 +270,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Main";
+            this.Name = "fMain";
             this.Text = "Quản Lý Khách Sạn";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

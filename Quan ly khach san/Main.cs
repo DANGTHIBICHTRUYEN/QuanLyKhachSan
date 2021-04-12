@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quan_ly_khach_san
 {
-    public partial class Main : Form
+    public partial class fMain : Form
     {
-        public Main()
+        public fMain()
         {
             InitializeComponent();
         }
@@ -59,20 +59,57 @@ namespace Quan_ly_khach_san
 
         private void hóaĐToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            fDoanhThu f = new fDoanhThu();
+            f.Show();
+            this.Close();
         }
 
         private void bÁoCÁoDoanhThuTheoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void danhSáchPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            fDanhSachPhong f = new fDanhSachPhong();
+            f.Show();
+            this.Close();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void khachHangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fDanhSachKhachHang f = new fDanhSachKhachHang();
+            f.Show();
+            this.Close();
+        }
+
+        private void lapPhieuThuePhongToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            fDanhSachPhong f = new fDanhSachPhong();
+            f.Show();
+            this.Close();
+        }
+
+        private void traPhongToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TraPhong f = new TraPhong();
+            f.Show();
+            this.Close();
+        }
+
+        private void lapHoaDonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HoaDon f = new HoaDon();
+            f.Show();
+            this.Close();
+        }
+
+        private void chucNangToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

@@ -46,5 +46,12 @@ namespace Quan_ly_khach_san
         {
 
         }
+
+        private void btQuayLai_Click(object sender, EventArgs e)
+        {
+            fMain f = new fMain();
+            f.Show();
+            this.Close();
+        }
     }
 }

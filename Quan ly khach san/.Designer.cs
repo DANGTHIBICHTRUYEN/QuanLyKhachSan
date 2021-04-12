@@ -38,14 +38,15 @@
             this.txSoPhong = new System.Windows.Forms.TextBox();
             this.txDonGia = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cbxLoaiPhong = new System.Windows.Forms.ComboBox();
-            this.cbxTinhTrang = new System.Windows.Forms.ComboBox();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbxLoaiPhong = new System.Windows.Forms.ComboBox();
+            this.cbxTinhTrang = new System.Windows.Forms.ComboBox();
             this.gbThongTinPhong = new System.Windows.Forms.GroupBox();
+            this.btQuayLai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbThongTinPhong.SuspendLayout();
             this.SuspendLayout();
@@ -112,7 +113,7 @@
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(388, 70);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 19);
+            this.label6.Size = new System.Drawing.Size(91, 19);
             this.label6.TabIndex = 5;
             this.label6.Text = "Tình Trạng";
             // 
@@ -155,28 +156,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(693, 240);
             this.dataGridView1.TabIndex = 15;
             // 
-            // cbxLoaiPhong
-            // 
-            this.cbxLoaiPhong.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.cbxLoaiPhong.FormattingEnabled = true;
-            this.cbxLoaiPhong.Location = new System.Drawing.Point(154, 113);
-            this.cbxLoaiPhong.Name = "cbxLoaiPhong";
-            this.cbxLoaiPhong.Size = new System.Drawing.Size(155, 28);
-            this.cbxLoaiPhong.TabIndex = 24;
-            // 
-            // cbxTinhTrang
-            // 
-            this.cbxTinhTrang.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.cbxTinhTrang.FormattingEnabled = true;
-            this.cbxTinhTrang.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C"});
-            this.cbxTinhTrang.Location = new System.Drawing.Point(504, 67);
-            this.cbxTinhTrang.Name = "cbxTinhTrang";
-            this.cbxTinhTrang.Size = new System.Drawing.Size(155, 28);
-            this.cbxTinhTrang.TabIndex = 25;
-            // 
             // MaKH
             // 
             this.MaKH.HeaderText = "Mã KH";
@@ -207,6 +186,28 @@
             this.TinhTrang.Name = "TinhTrang";
             this.TinhTrang.Width = 130;
             // 
+            // cbxLoaiPhong
+            // 
+            this.cbxLoaiPhong.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.cbxLoaiPhong.FormattingEnabled = true;
+            this.cbxLoaiPhong.Location = new System.Drawing.Point(154, 113);
+            this.cbxLoaiPhong.Name = "cbxLoaiPhong";
+            this.cbxLoaiPhong.Size = new System.Drawing.Size(155, 28);
+            this.cbxLoaiPhong.TabIndex = 24;
+            // 
+            // cbxTinhTrang
+            // 
+            this.cbxTinhTrang.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.cbxTinhTrang.FormattingEnabled = true;
+            this.cbxTinhTrang.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.cbxTinhTrang.Location = new System.Drawing.Point(504, 67);
+            this.cbxTinhTrang.Name = "cbxTinhTrang";
+            this.cbxTinhTrang.Size = new System.Drawing.Size(155, 28);
+            this.cbxTinhTrang.TabIndex = 25;
+            // 
             // gbThongTinPhong
             // 
             this.gbThongTinPhong.Controls.Add(this.cbxTinhTrang);
@@ -226,11 +227,22 @@
             this.gbThongTinPhong.TabStop = false;
             this.gbThongTinPhong.Text = "Thông Tin Phòng";
             // 
+            // btQuayLai
+            // 
+            this.btQuayLai.Location = new System.Drawing.Point(639, 9);
+            this.btQuayLai.Name = "btQuayLai";
+            this.btQuayLai.Size = new System.Drawing.Size(75, 23);
+            this.btQuayLai.TabIndex = 27;
+            this.btQuayLai.Text = "Quay lại";
+            this.btQuayLai.UseVisualStyleBackColor = true;
+            this.btQuayLai.Click += new System.EventHandler(this.btQuayLai_Click);
+            // 
             // fDanhSachPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 498);
+            this.Controls.Add(this.btQuayLai);
             this.Controls.Add(this.gbThongTinPhong);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -264,5 +276,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
         private System.Windows.Forms.GroupBox gbThongTinPhong;
+        private System.Windows.Forms.Button btQuayLai;
     }
 }

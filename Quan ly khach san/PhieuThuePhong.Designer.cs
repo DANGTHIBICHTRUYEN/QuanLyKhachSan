@@ -32,6 +32,11 @@
             this.lbMaPTP = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaPTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayDen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayDi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cSoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbMaKH = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbNgayThue = new System.Windows.Forms.Label();
@@ -44,7 +49,15 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbNgayTra = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -55,20 +68,8 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaPTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayDen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayDi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cSoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbThongTinThuePhong = new System.Windows.Forms.GroupBox();
+            this.btQuayLai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -120,6 +121,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(770, 150);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // MaPTP
+            // 
+            this.MaPTP.HeaderText = "Mã PTP";
+            this.MaPTP.Name = "MaPTP";
+            this.MaPTP.Width = 145;
+            // 
+            // MaKhachHang
+            // 
+            this.MaKhachHang.HeaderText = "Mã KH";
+            this.MaKhachHang.Name = "MaKhachHang";
+            this.MaKhachHang.Width = 145;
+            // 
+            // NgayDen
+            // 
+            this.NgayDen.HeaderText = "Ngày Đến";
+            this.NgayDen.Name = "NgayDen";
+            this.NgayDen.Width = 145;
+            // 
+            // NgayDi
+            // 
+            this.NgayDi.HeaderText = "Ngày Đi";
+            this.NgayDi.Name = "NgayDi";
+            this.NgayDi.Width = 145;
+            // 
+            // cSoPhong
+            // 
+            this.cSoPhong.HeaderText = "Số Phòng";
+            this.cSoPhong.Name = "cSoPhong";
+            this.cSoPhong.Width = 145;
             // 
             // lbMaKH
             // 
@@ -239,6 +270,30 @@
             this.dataGridView2.TabIndex = 15;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
+            // MaKH
+            // 
+            this.MaKH.HeaderText = "Mã KH";
+            this.MaKH.Name = "MaKH";
+            this.MaKH.Width = 165;
+            // 
+            // TenKhachHang
+            // 
+            this.TenKhachHang.HeaderText = "Tên Khách Hàng";
+            this.TenKhachHang.Name = "TenKhachHang";
+            this.TenKhachHang.Width = 165;
+            // 
+            // SoDT
+            // 
+            this.SoDT.HeaderText = "SĐT";
+            this.SoDT.Name = "SoDT";
+            this.SoDT.Width = 165;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 165;
+            // 
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -252,6 +307,30 @@
             this.dataGridView3.Size = new System.Drawing.Size(707, 129);
             this.dataGridView3.TabIndex = 16;
             // 
+            // SoPhong
+            // 
+            this.SoPhong.HeaderText = "Số Phòng";
+            this.SoPhong.Name = "SoPhong";
+            this.SoPhong.Width = 165;
+            // 
+            // LoaiPhong
+            // 
+            this.LoaiPhong.HeaderText = "Loại Phòng";
+            this.LoaiPhong.Name = "LoaiPhong";
+            this.LoaiPhong.Width = 165;
+            // 
+            // GiaPhong
+            // 
+            this.GiaPhong.HeaderText = "Giá Phòng";
+            this.GiaPhong.Name = "GiaPhong";
+            this.GiaPhong.Width = 165;
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.HeaderText = "Tình Trạng";
+            this.TinhTrang.Name = "TinhTrang";
+            this.TinhTrang.Width = 165;
+            // 
             // lbNgayTra
             // 
             this.lbNgayTra.AutoSize = true;
@@ -259,7 +338,7 @@
             this.lbNgayTra.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.lbNgayTra.Location = new System.Drawing.Point(477, 56);
             this.lbNgayTra.Name = "lbNgayTra";
-            this.lbNgayTra.Size = new System.Drawing.Size(78, 19);
+            this.lbNgayTra.Size = new System.Drawing.Size(77, 19);
             this.lbNgayTra.TabIndex = 17;
             this.lbNgayTra.Text = "Ngày Trả";
             // 
@@ -352,84 +431,6 @@
             this.label11.TabIndex = 27;
             this.label11.Text = "Thông Tin Khách Hàng";
             // 
-            // MaKH
-            // 
-            this.MaKH.HeaderText = "Mã KH";
-            this.MaKH.Name = "MaKH";
-            this.MaKH.Width = 165;
-            // 
-            // TenKhachHang
-            // 
-            this.TenKhachHang.HeaderText = "Tên Khách Hàng";
-            this.TenKhachHang.Name = "TenKhachHang";
-            this.TenKhachHang.Width = 165;
-            // 
-            // SoDT
-            // 
-            this.SoDT.HeaderText = "SĐT";
-            this.SoDT.Name = "SoDT";
-            this.SoDT.Width = 165;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 165;
-            // 
-            // SoPhong
-            // 
-            this.SoPhong.HeaderText = "Số Phòng";
-            this.SoPhong.Name = "SoPhong";
-            this.SoPhong.Width = 165;
-            // 
-            // LoaiPhong
-            // 
-            this.LoaiPhong.HeaderText = "Loại Phòng";
-            this.LoaiPhong.Name = "LoaiPhong";
-            this.LoaiPhong.Width = 165;
-            // 
-            // GiaPhong
-            // 
-            this.GiaPhong.HeaderText = "Giá Phòng";
-            this.GiaPhong.Name = "GiaPhong";
-            this.GiaPhong.Width = 165;
-            // 
-            // TinhTrang
-            // 
-            this.TinhTrang.HeaderText = "Tình Trạng";
-            this.TinhTrang.Name = "TinhTrang";
-            this.TinhTrang.Width = 165;
-            // 
-            // MaPTP
-            // 
-            this.MaPTP.HeaderText = "Mã PTP";
-            this.MaPTP.Name = "MaPTP";
-            this.MaPTP.Width = 145;
-            // 
-            // MaKhachHang
-            // 
-            this.MaKhachHang.HeaderText = "Mã KH";
-            this.MaKhachHang.Name = "MaKhachHang";
-            this.MaKhachHang.Width = 145;
-            // 
-            // NgayDen
-            // 
-            this.NgayDen.HeaderText = "Ngày Đến";
-            this.NgayDen.Name = "NgayDen";
-            this.NgayDen.Width = 145;
-            // 
-            // NgayDi
-            // 
-            this.NgayDi.HeaderText = "Ngày Đi";
-            this.NgayDi.Name = "NgayDi";
-            this.NgayDi.Width = 145;
-            // 
-            // cSoPhong
-            // 
-            this.cSoPhong.HeaderText = "Số Phòng";
-            this.cSoPhong.Name = "cSoPhong";
-            this.cSoPhong.Width = 145;
-            // 
             // gbThongTinThuePhong
             // 
             this.gbThongTinThuePhong.Controls.Add(this.lbNgayTra);
@@ -451,11 +452,22 @@
             this.gbThongTinThuePhong.TabStop = false;
             this.gbThongTinThuePhong.Text = "Thông Tin Thuê Phòng";
             // 
+            // btQuayLai
+            // 
+            this.btQuayLai.Location = new System.Drawing.Point(31, 671);
+            this.btQuayLai.Name = "btQuayLai";
+            this.btQuayLai.Size = new System.Drawing.Size(75, 23);
+            this.btQuayLai.TabIndex = 29;
+            this.btQuayLai.Text = "Quay lại";
+            this.btQuayLai.UseVisualStyleBackColor = true;
+            this.btQuayLai.Click += new System.EventHandler(this.btQuayLai_Click);
+            // 
             // fPhieuThuePhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 693);
+            this.ClientSize = new System.Drawing.Size(1020, 702);
+            this.Controls.Add(this.btQuayLai);
             this.Controls.Add(this.gbThongTinThuePhong);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox8);
@@ -528,5 +540,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayDi;
         private System.Windows.Forms.DataGridViewTextBoxColumn cSoPhong;
         private System.Windows.Forms.GroupBox gbThongTinThuePhong;
+        private System.Windows.Forms.Button btQuayLai;
     }
 }

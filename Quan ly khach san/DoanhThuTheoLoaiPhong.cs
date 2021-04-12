@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Quan_ly_khach_san
 {
-    public partial class Form1 : Form
+    public partial class fDoanhThu : Form
     {
-        public Form1()
+        public fDoanhThu()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace Quan_ly_khach_san
         private void btBaoCao_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btQuayLai_Click(object sender, EventArgs e)
+        {
+            fMain f = new fMain();
+            f.Show();
+            this.Close();
         }
     }
 }

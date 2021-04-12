@@ -59,15 +59,5 @@ namespace Quan_ly_khach_san.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _10993_17082610430055738075 {
-            get {
-                object obj = ResourceManager.GetObject("10993_17082610430055738075", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

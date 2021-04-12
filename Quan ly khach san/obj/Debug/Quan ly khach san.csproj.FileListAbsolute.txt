@@ -1,0 +1,17 @@
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.csprojAssemblyReference.cache
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDangNhap.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDanhSachPhong.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDanhSachKhachHang.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fPhieuThuePhong.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.HoaDon.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.TraPhong.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.csproj.GenerateResource.cache
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\bin\Debug\Quan ly khach san.exe.config
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\bin\Debug\Quan ly khach san.exe
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\bin\Debug\Quan ly khach san.pdb
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.Properties.Resources.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.csproj.CoreCompileInputs.cache
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.exe
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.pdb
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fMain.resources
+C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDoanhThu.resources

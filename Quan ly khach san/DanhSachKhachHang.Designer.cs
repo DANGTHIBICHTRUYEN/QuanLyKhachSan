@@ -60,6 +60,7 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.gbThongTinKhachHang = new System.Windows.Forms.GroupBox();
+            this.btQuayLai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbThongTinKhachHang.SuspendLayout();
             this.SuspendLayout();
@@ -350,11 +351,22 @@
             this.gbThongTinKhachHang.TabStop = false;
             this.gbThongTinKhachHang.Text = "Thông tin Khách Hàng";
             // 
+            // btQuayLai
+            // 
+            this.btQuayLai.Location = new System.Drawing.Point(783, 9);
+            this.btQuayLai.Name = "btQuayLai";
+            this.btQuayLai.Size = new System.Drawing.Size(75, 23);
+            this.btQuayLai.TabIndex = 28;
+            this.btQuayLai.Text = "Quay lại";
+            this.btQuayLai.UseVisualStyleBackColor = true;
+            this.btQuayLai.Click += new System.EventHandler(this.btQuayLai_Click);
+            // 
             // fDanhSachKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 499);
+            this.Controls.Add(this.btQuayLai);
             this.Controls.Add(this.gbThongTinKhachHang);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btSua);
@@ -404,5 +416,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox gbThongTinKhachHang;
+        private System.Windows.Forms.Button btQuayLai;
     }
 }

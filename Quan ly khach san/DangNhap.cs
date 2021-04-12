@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
+
 
 namespace Quan_ly_khach_san
 {
@@ -30,7 +33,7 @@ namespace Quan_ly_khach_san
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fDanhMucPhong ri = new fDanhMucPhong();
+            fDanhSachPhong ri = new fDanhSachPhong();
             ri.ShowDialog();
         }
 
@@ -41,13 +44,59 @@ namespace Quan_ly_khach_san
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
-            fDanhMucPhong f = new fDanhMucPhong();
-            f.Show();
-            this.Hide();
+            SqlConnection conn = new SqlConnection(@"Data Source=fx\sqlexpress;Initial Catalog=QLKHACHSAN;Integrated Security=True;");
+            try
+            {
+                conn.Open();
+                string tk = txTaiKhoan.Text;
+                string mk = txMatKhau.Text;
+                string sql = "Select * From DangNhap where TaiKhoan = '"  +tk+  "' and MatKhau = '"  +mk+  "' ";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader dta = cmd.ExecuteReader();
+                if(dta.Read()==true)
+                {
+                    MessageBox.Show("Đăng Nhập Thành Công");
+                    fMain f = new fMain();
+                    f.Show();
+                    this.Hide();
+                }    
+                else
+                {
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu");
+                }    
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Lỗi Kết Nối");
+            }
+
+
+
+            
             
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbMatKhau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txTaiKhoan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txMatKhau_TextChanged(object sender, EventArgs e)
         {
 
         }
