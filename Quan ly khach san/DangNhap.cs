@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
+
 
 
 namespace Quan_ly_khach_san
 {
     public partial class fDangNhap : Form
     {
+        SqlConnection conn;
         public fDangNhap()
         {
             InitializeComponent();
@@ -28,7 +31,8 @@ namespace Quan_ly_khach_san
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            string conString = ConfigurationManager.ConnectionStrings["QLKHACHSAN"].ConnectionString.ToString();
+             conn = new SqlConnection(conString);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,7 +48,7 @@ namespace Quan_ly_khach_san
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=fx\sqlexpress;Initial Catalog=QLKHACHSAN;Integrated Security=True;");
+            
             try
             {
                 conn.Open();
@@ -63,17 +67,17 @@ namespace Quan_ly_khach_san
                 else
                 {
                     MessageBox.Show("Sai tài khoản hoặc mật khẩu");
-                }    
+   
+                }
+
             }
             catch(Exception ex)
             {
                 MessageBox.Show("Lỗi Kết Nối");
+                
             }
 
 
-
-            
-            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -99,6 +103,16 @@ namespace Quan_ly_khach_san
         private void txMatKhau_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+
+
+        private void fDangNhap_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btDangNhap_Click(this, new EventArgs());
+            }
         }
     }
 }

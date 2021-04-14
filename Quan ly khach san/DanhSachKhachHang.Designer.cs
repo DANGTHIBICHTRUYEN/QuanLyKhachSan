@@ -44,10 +44,7 @@
             this.txCMND = new System.Windows.Forms.TextBox();
             this.cbxGioiTinh = new System.Windows.Forms.ComboBox();
             this.cbxLoaiKhach = new System.Windows.Forms.ComboBox();
-            this.btThemKhach = new System.Windows.Forms.Button();
-            this.btXoaKhach = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.btSua = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,9 +55,11 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.gbThongTinKhachHang = new System.Windows.Forms.GroupBox();
-            this.btQuayLai = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbThongTinKhachHang.SuspendLayout();
             this.SuspendLayout();
@@ -217,45 +216,17 @@
             this.cbxLoaiKhach.Size = new System.Drawing.Size(190, 21);
             this.cbxLoaiKhach.TabIndex = 19;
             // 
-            // btThemKhach
-            // 
-            this.btThemKhach.ImageIndex = 2;
-            this.btThemKhach.Location = new System.Drawing.Point(583, 223);
-            this.btThemKhach.Name = "btThemKhach";
-            this.btThemKhach.Size = new System.Drawing.Size(30, 30);
-            this.btThemKhach.TabIndex = 20;
-            this.btThemKhach.UseVisualStyleBackColor = true;
-            // 
-            // btXoaKhach
-            // 
-            this.btXoaKhach.ImageIndex = 2;
-            this.btXoaKhach.Location = new System.Drawing.Point(643, 223);
-            this.btXoaKhach.Name = "btXoaKhach";
-            this.btXoaKhach.Size = new System.Drawing.Size(30, 30);
-            this.btXoaKhach.TabIndex = 21;
-            this.btXoaKhach.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label8.Location = new System.Drawing.Point(268, 9);
+            this.label8.Location = new System.Drawing.Point(31, 6);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(326, 32);
             this.label8.TabIndex = 22;
             this.label8.Text = "Danh Sách Khách Hàng";
             this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // btSua
-            // 
-            this.btSua.ImageIndex = 2;
-            this.btSua.Location = new System.Drawing.Point(703, 223);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(30, 30);
-            this.btSua.TabIndex = 23;
-            this.btSua.UseVisualStyleBackColor = true;
-            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // label10
             // 
@@ -346,33 +317,70 @@
             this.gbThongTinKhachHang.Controls.Add(this.label1);
             this.gbThongTinKhachHang.Location = new System.Drawing.Point(26, 41);
             this.gbThongTinKhachHang.Name = "gbThongTinKhachHang";
-            this.gbThongTinKhachHang.Size = new System.Drawing.Size(740, 173);
+            this.gbThongTinKhachHang.Size = new System.Drawing.Size(832, 173);
             this.gbThongTinKhachHang.TabIndex = 26;
             this.gbThongTinKhachHang.TabStop = false;
             this.gbThongTinKhachHang.Text = "Thông tin Khách Hàng";
             // 
-            // btQuayLai
+            // button1
             // 
-            this.btQuayLai.Location = new System.Drawing.Point(783, 9);
-            this.btQuayLai.Name = "btQuayLai";
-            this.btQuayLai.Size = new System.Drawing.Size(75, 23);
-            this.btQuayLai.TabIndex = 28;
-            this.btQuayLai.Text = "Quay lại";
-            this.btQuayLai.UseVisualStyleBackColor = true;
-            this.btQuayLai.Click += new System.EventHandler(this.btQuayLai_Click);
+            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(297, 220);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 30);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Sửa ";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.SkyBlue;
+            this.button6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button6.Location = new System.Drawing.Point(12, 220);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(136, 30);
+            this.button6.TabIndex = 35;
+            this.button6.Text = "Thêm ";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.SkyBlue;
+            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button5.Location = new System.Drawing.Point(155, 220);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(136, 30);
+            this.button5.TabIndex = 34;
+            this.button5.Text = "Xóa";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SkyBlue;
+            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(722, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 28);
+            this.button2.TabIndex = 37;
+            this.button2.Text = "Quay lại";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // fDanhSachKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 499);
-            this.Controls.Add(this.btQuayLai);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.gbThongTinKhachHang);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btSua);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btXoaKhach);
-            this.Controls.Add(this.btThemKhach);
             this.Name = "fDanhSachKhachHang";
             this.Text = "DanhSachKhachHang";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -400,10 +408,7 @@
         private System.Windows.Forms.TextBox txCMND;
         private System.Windows.Forms.ComboBox cbxGioiTinh;
         private System.Windows.Forms.ComboBox cbxLoaiKhach;
-        private System.Windows.Forms.Button btThemKhach;
-        private System.Windows.Forms.Button btXoaKhach;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -414,8 +419,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox gbThongTinKhachHang;
-        private System.Windows.Forms.Button btQuayLai;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2;
     }
 }

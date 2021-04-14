@@ -17,12 +17,12 @@ namespace Quan_ly_khach_san
             InitializeComponent();
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void gbThongTinKhachHang_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void btQuayLai_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             fMain f = new fMain();
             f.Show();

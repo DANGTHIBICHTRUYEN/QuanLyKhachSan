@@ -40,21 +40,21 @@ namespace Quan_ly_khach_san
             // 
             // txMatKhau
             // 
-            this.txMatKhau.Location = new System.Drawing.Point(264, 145);
+            this.txMatKhau.Location = new System.Drawing.Point(187, 100);
             this.txMatKhau.Name = "txMatKhau";
             this.txMatKhau.PasswordChar = '*';
             this.txMatKhau.Size = new System.Drawing.Size(140, 20);
-            this.txMatKhau.TabIndex = 0;
+            this.txMatKhau.TabIndex = 1;
             this.txMatKhau.UseSystemPasswordChar = true;
             this.txMatKhau.TextChanged += new System.EventHandler(this.txMatKhau_TextChanged);
             // 
             // txTaiKhoan
             // 
             this.txTaiKhoan.BackColor = System.Drawing.SystemColors.Window;
-            this.txTaiKhoan.Location = new System.Drawing.Point(264, 113);
+            this.txTaiKhoan.Location = new System.Drawing.Point(187, 71);
             this.txTaiKhoan.Name = "txTaiKhoan";
             this.txTaiKhoan.Size = new System.Drawing.Size(140, 20);
-            this.txTaiKhoan.TabIndex = 1;
+            this.txTaiKhoan.TabIndex = 0;
             this.txTaiKhoan.TextChanged += new System.EventHandler(this.txTaiKhoan_TextChanged);
             // 
             // btDangNhap
@@ -63,7 +63,7 @@ namespace Quan_ly_khach_san
             this.btDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btDangNhap.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDangNhap.ForeColor = System.Drawing.Color.Transparent;
-            this.btDangNhap.Location = new System.Drawing.Point(187, 207);
+            this.btDangNhap.Location = new System.Drawing.Point(110, 139);
             this.btDangNhap.Name = "btDangNhap";
             this.btDangNhap.Size = new System.Drawing.Size(217, 42);
             this.btDangNhap.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace Quan_ly_khach_san
             this.lbTaiKhoan.BackColor = System.Drawing.Color.Transparent;
             this.lbTaiKhoan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.lbTaiKhoan.Location = new System.Drawing.Point(179, 114);
+            this.lbTaiKhoan.Location = new System.Drawing.Point(102, 70);
             this.lbTaiKhoan.Name = "lbTaiKhoan";
             this.lbTaiKhoan.Size = new System.Drawing.Size(79, 19);
             this.lbTaiKhoan.TabIndex = 4;
@@ -89,7 +89,7 @@ namespace Quan_ly_khach_san
             this.lbMatKhau.BackColor = System.Drawing.Color.Transparent;
             this.lbMatKhau.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMatKhau.ForeColor = System.Drawing.Color.White;
-            this.lbMatKhau.Location = new System.Drawing.Point(179, 146);
+            this.lbMatKhau.Location = new System.Drawing.Point(102, 99);
             this.lbMatKhau.Name = "lbMatKhau";
             this.lbMatKhau.Size = new System.Drawing.Size(79, 19);
             this.lbMatKhau.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace Quan_ly_khach_san
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(226, 48);
+            this.label1.Location = new System.Drawing.Point(132, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 37);
             this.label1.TabIndex = 6;
@@ -116,7 +116,7 @@ namespace Quan_ly_khach_san
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(568, 261);
+            this.ClientSize = new System.Drawing.Size(421, 193);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbMatKhau);
             this.Controls.Add(this.lbTaiKhoan);
@@ -125,8 +125,10 @@ namespace Quan_ly_khach_san
             this.Controls.Add(this.txMatKhau);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "fDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dang nhap";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fDangNhap_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

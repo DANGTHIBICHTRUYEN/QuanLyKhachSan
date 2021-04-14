@@ -53,5 +53,12 @@ namespace Quan_ly_khach_san
             f.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fMain f = new fMain();
+            f.Show();
+            this.Close();
+        }
     }
 }

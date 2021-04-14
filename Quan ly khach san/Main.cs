@@ -97,7 +97,7 @@ namespace Quan_ly_khach_san
 
         private void traPhongToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            TraPhong f = new TraPhong();
+            HoaDon f = new HoaDon();
             f.Show();
             this.Close();
         }
@@ -112,6 +112,13 @@ namespace Quan_ly_khach_san
         private void chucNangToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lậpPhiếuThuêPhòngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            fPhieuThuePhong f = new fPhieuThuePhong();
+            f.Show();
+            this.Close();
         }
     }
 }

@@ -29,11 +29,7 @@
         private void InitializeComponent()
         {
             this.lbMaKH = new System.Windows.Forms.Label();
-            this.btTraPhong = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.MaPhieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,26 +47,19 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.btThanhToan = new System.Windows.Forms.Button();
-            this.btTaoHD = new System.Windows.Forms.Button();
             this.tbTimKiemMaPTP = new System.Windows.Forms.TextBox();
             this.btTimKiem = new System.Windows.Forms.Button();
-            this.gbGiaPhong = new System.Windows.Forms.GroupBox();
             this.gbThongTinTraPhong = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lbThueLoaiKhach = new System.Windows.Forms.Label();
             this.gbMaThuePhong = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btQuayLai = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.gbGiaPhong.SuspendLayout();
             this.gbThongTinTraPhong.SuspendLayout();
             this.gbMaThuePhong.SuspendLayout();
             this.SuspendLayout();
@@ -80,23 +69,11 @@
             this.lbMaKH.AutoSize = true;
             this.lbMaKH.BackColor = System.Drawing.Color.LightPink;
             this.lbMaKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lbMaKH.Location = new System.Drawing.Point(65, 66);
+            this.lbMaKH.Location = new System.Drawing.Point(110, 71);
             this.lbMaKH.Name = "lbMaKH";
             this.lbMaKH.Size = new System.Drawing.Size(59, 19);
             this.lbMaKH.TabIndex = 0;
             this.lbMaKH.Text = "Mã KH";
-            // 
-            // btTraPhong
-            // 
-            this.btTraPhong.BackColor = System.Drawing.Color.PapayaWhip;
-            this.btTraPhong.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btTraPhong.Location = new System.Drawing.Point(489, 653);
-            this.btTraPhong.Name = "btTraPhong";
-            this.btTraPhong.Size = new System.Drawing.Size(121, 23);
-            this.btTraPhong.TabIndex = 1;
-            this.btTraPhong.Text = "Trả Phòng";
-            this.btTraPhong.UseVisualStyleBackColor = false;
-            this.btTraPhong.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -105,27 +82,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(181, 25);
             this.textBox1.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SoPhong,
-            this.GiaTien});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 260);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // SoPhong
-            // 
-            this.SoPhong.HeaderText = "Số Phòng";
-            this.SoPhong.Name = "SoPhong";
-            // 
-            // GiaTien
-            // 
-            this.GiaTien.HeaderText = "Giá/Ngày";
-            this.GiaTien.Name = "GiaTien";
             // 
             // dataGridView2
             // 
@@ -136,9 +92,9 @@
             this.NgayDen,
             this.NgayDi,
             this.cSoPhong});
-            this.dataGridView2.Location = new System.Drawing.Point(49, 124);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 379);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(974, 256);
+            this.dataGridView2.Size = new System.Drawing.Size(974, 168);
             this.dataGridView2.TabIndex = 4;
             // 
             // MaPhieu
@@ -187,7 +143,7 @@
             this.lbMaPTP.AutoSize = true;
             this.lbMaPTP.BackColor = System.Drawing.Color.LightPink;
             this.lbMaPTP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaPTP.Location = new System.Drawing.Point(65, 32);
+            this.lbMaPTP.Location = new System.Drawing.Point(102, 32);
             this.lbMaPTP.Name = "lbMaPTP";
             this.lbMaPTP.Size = new System.Drawing.Size(67, 19);
             this.lbMaPTP.TabIndex = 6;
@@ -199,7 +155,7 @@
             this.lbSoNgayO.AutoSize = true;
             this.lbSoNgayO.BackColor = System.Drawing.Color.LightPink;
             this.lbSoNgayO.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lbSoNgayO.Location = new System.Drawing.Point(54, 99);
+            this.lbSoNgayO.Location = new System.Drawing.Point(77, 102);
             this.lbSoNgayO.Name = "lbSoNgayO";
             this.lbSoNgayO.Size = new System.Drawing.Size(92, 19);
             this.lbSoNgayO.TabIndex = 7;
@@ -210,7 +166,7 @@
             this.lbSoPhong.AutoSize = true;
             this.lbSoPhong.BackColor = System.Drawing.Color.LightPink;
             this.lbSoPhong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lbSoPhong.Location = new System.Drawing.Point(419, 93);
+            this.lbSoPhong.Location = new System.Drawing.Point(434, 105);
             this.lbSoPhong.Name = "lbSoPhong";
             this.lbSoPhong.Size = new System.Drawing.Size(85, 19);
             this.lbSoPhong.TabIndex = 8;
@@ -219,9 +175,9 @@
             // lbTongTien
             // 
             this.lbTongTien.AutoSize = true;
-            this.lbTongTien.BackColor = System.Drawing.Color.LightPink;
+            this.lbTongTien.BackColor = System.Drawing.Color.SpringGreen;
             this.lbTongTien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lbTongTien.Location = new System.Drawing.Point(172, 188);
+            this.lbTongTien.Location = new System.Drawing.Point(77, 190);
             this.lbTongTien.Name = "lbTongTien";
             this.lbTongTien.Size = new System.Drawing.Size(86, 19);
             this.lbTongTien.TabIndex = 9;
@@ -233,7 +189,7 @@
             this.lbNgayDen.BackColor = System.Drawing.Color.LightPink;
             this.lbNgayDen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.lbNgayDen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbNgayDen.Location = new System.Drawing.Point(420, 32);
+            this.lbNgayDen.Location = new System.Drawing.Point(435, 35);
             this.lbNgayDen.Name = "lbNgayDen";
             this.lbNgayDen.Size = new System.Drawing.Size(84, 19);
             this.lbNgayDen.TabIndex = 10;
@@ -244,7 +200,7 @@
             this.lbNgayHT.AutoSize = true;
             this.lbNgayHT.BackColor = System.Drawing.Color.LightPink;
             this.lbNgayHT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lbNgayHT.Location = new System.Drawing.Point(404, 60);
+            this.lbNgayHT.Location = new System.Drawing.Point(404, 72);
             this.lbNgayHT.Name = "lbNgayHT";
             this.lbNgayHT.Size = new System.Drawing.Size(115, 19);
             this.lbNgayHT.TabIndex = 11;
@@ -255,7 +211,7 @@
             this.lbGia.AutoSize = true;
             this.lbGia.BackColor = System.Drawing.Color.LightPink;
             this.lbGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lbGia.Location = new System.Drawing.Point(419, 126);
+            this.lbGia.Location = new System.Drawing.Point(430, 134);
             this.lbGia.Name = "lbGia";
             this.lbGia.Size = new System.Drawing.Size(89, 19);
             this.lbGia.TabIndex = 12;
@@ -263,7 +219,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(264, 189);
+            this.textBox2.Location = new System.Drawing.Point(176, 189);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(165, 20);
             this.textBox2.TabIndex = 14;
@@ -283,13 +239,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(181, 25);
             this.textBox4.TabIndex = 16;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(420, 553);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(165, 20);
-            this.textBox5.TabIndex = 17;
             // 
             // textBox6
             // 
@@ -323,28 +272,6 @@
             this.textBox10.Size = new System.Drawing.Size(192, 25);
             this.textBox10.TabIndex = 22;
             // 
-            // btThanhToan
-            // 
-            this.btThanhToan.BackColor = System.Drawing.Color.PapayaWhip;
-            this.btThanhToan.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btThanhToan.Location = new System.Drawing.Point(666, 653);
-            this.btThanhToan.Name = "btThanhToan";
-            this.btThanhToan.Size = new System.Drawing.Size(118, 23);
-            this.btThanhToan.TabIndex = 24;
-            this.btThanhToan.Text = "Thanh Toán";
-            this.btThanhToan.UseVisualStyleBackColor = false;
-            // 
-            // btTaoHD
-            // 
-            this.btTaoHD.BackColor = System.Drawing.Color.PapayaWhip;
-            this.btTaoHD.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btTaoHD.Location = new System.Drawing.Point(835, 653);
-            this.btTaoHD.Name = "btTaoHD";
-            this.btTaoHD.Size = new System.Drawing.Size(169, 23);
-            this.btTaoHD.TabIndex = 25;
-            this.btTaoHD.Text = "Tạo HĐ Thanh Toán";
-            this.btTaoHD.UseVisualStyleBackColor = false;
-            // 
             // tbTimKiemMaPTP
             // 
             this.tbTimKiemMaPTP.Location = new System.Drawing.Point(475, 30);
@@ -362,16 +289,6 @@
             this.btTimKiem.TabIndex = 27;
             this.btTimKiem.Text = "Tìm Kiếm";
             this.btTimKiem.UseVisualStyleBackColor = false;
-            // 
-            // gbGiaPhong
-            // 
-            this.gbGiaPhong.Controls.Add(this.dataGridView1);
-            this.gbGiaPhong.Location = new System.Drawing.Point(30, 403);
-            this.gbGiaPhong.Name = "gbGiaPhong";
-            this.gbGiaPhong.Size = new System.Drawing.Size(254, 279);
-            this.gbGiaPhong.TabIndex = 28;
-            this.gbGiaPhong.TabStop = false;
-            this.gbGiaPhong.Text = "Giá Phòng";
             // 
             // gbThongTinTraPhong
             // 
@@ -393,7 +310,7 @@
             this.gbThongTinTraPhong.Controls.Add(this.lbMaPTP);
             this.gbThongTinTraPhong.Controls.Add(this.textBox1);
             this.gbThongTinTraPhong.Controls.Add(this.lbMaKH);
-            this.gbThongTinTraPhong.Location = new System.Drawing.Point(313, 401);
+            this.gbThongTinTraPhong.Location = new System.Drawing.Point(36, 20);
             this.gbThongTinTraPhong.Name = "gbThongTinTraPhong";
             this.gbThongTinTraPhong.Size = new System.Drawing.Size(736, 222);
             this.gbThongTinTraPhong.TabIndex = 29;
@@ -423,10 +340,11 @@
             // gbMaThuePhong
             // 
             this.gbMaThuePhong.Controls.Add(this.flowLayoutPanel1);
+            this.gbMaThuePhong.Controls.Add(this.btQuayLai);
             this.gbMaThuePhong.Controls.Add(this.btTimKiem);
             this.gbMaThuePhong.Controls.Add(this.tbTimKiemMaPTP);
             this.gbMaThuePhong.Controls.Add(this.lbTimKiemMaPTP);
-            this.gbMaThuePhong.Location = new System.Drawing.Point(30, 11);
+            this.gbMaThuePhong.Location = new System.Drawing.Point(36, 260);
             this.gbMaThuePhong.Name = "gbMaThuePhong";
             this.gbMaThuePhong.Size = new System.Drawing.Size(993, 80);
             this.gbMaThuePhong.TabIndex = 30;
@@ -442,7 +360,7 @@
             // 
             // btQuayLai
             // 
-            this.btQuayLai.Location = new System.Drawing.Point(1029, 12);
+            this.btQuayLai.Location = new System.Drawing.Point(917, 19);
             this.btQuayLai.Name = "btQuayLai";
             this.btQuayLai.Size = new System.Drawing.Size(57, 23);
             this.btQuayLai.TabIndex = 31;
@@ -450,51 +368,30 @@
             this.btQuayLai.UseVisualStyleBackColor = true;
             this.btQuayLai.Click += new System.EventHandler(this.btQuayLai_Click);
             // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1092, 12);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(18, 696);
-            this.flowLayoutPanel2.TabIndex = 32;
-            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
-            // 
             // TraPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 720);
-            this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.btQuayLai);
+            this.ClientSize = new System.Drawing.Size(1073, 559);
             this.Controls.Add(this.gbMaThuePhong);
             this.Controls.Add(this.gbThongTinTraPhong);
-            this.Controls.Add(this.gbGiaPhong);
-            this.Controls.Add(this.btTaoHD);
-            this.Controls.Add(this.btThanhToan);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.btTraPhong);
             this.Name = "TraPhong";
             this.Text = "Trả Phòng";
             this.Load += new System.EventHandler(this.TraPhong_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.gbGiaPhong.ResumeLayout(false);
             this.gbThongTinTraPhong.ResumeLayout(false);
             this.gbThongTinTraPhong.PerformLayout();
             this.gbMaThuePhong.ResumeLayout(false);
             this.gbMaThuePhong.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label lbMaKH;
-        private System.Windows.Forms.Button btTraPhong;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label lbTimKiemMaPTP;
         private System.Windows.Forms.Label lbMaPTP;
@@ -507,22 +404,16 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button btThanhToan;
-        private System.Windows.Forms.Button btTaoHD;
         private System.Windows.Forms.TextBox tbTimKiemMaPTP;
         private System.Windows.Forms.Button btTimKiem;
-        private System.Windows.Forms.GroupBox gbGiaPhong;
         private System.Windows.Forms.GroupBox gbThongTinTraPhong;
         private System.Windows.Forms.GroupBox gbMaThuePhong;
         private System.Windows.Forms.Label lbThueLoaiKhach;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoPhong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPhieu;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayDen;
@@ -530,6 +421,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cSoPhong;
         private System.Windows.Forms.Button btQuayLai;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
