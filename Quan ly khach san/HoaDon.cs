@@ -7,14 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Quan_ly_khach_san
 {
     public partial class HoaDon : Form
     {
+        SqlConnection conn;
         public HoaDon()
         {
             InitializeComponent();
+        }
+
+        public void HienThi()
+        {
+            string sqlSELECT = "Select * FROM HOADON";
+            SqlCommand cmd = new SqlCommand(sqlSELECT, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            dataGridView1.DataSource = dt;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -37,6 +50,29 @@ namespace Quan_ly_khach_san
             fMain f = new fMain();
             f.Show();
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void HoaDon_Load(object sender, EventArgs e)
+        {
+            string conString = ConfigurationManager.ConnectionStrings["QLKHACHSAN"].ConnectionString.ToString();
+            conn = new SqlConnection(conString);
+            conn.Open();
+            HienThi();
         }
     }
 }
