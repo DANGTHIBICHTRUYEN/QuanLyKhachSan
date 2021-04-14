@@ -36,7 +36,7 @@
             this.lbSoPhong = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbDonGia = new System.Windows.Forms.Label();
-            this.txtMaHD = new System.Windows.Forms.TextBox();
+            this.txMaPTP = new System.Windows.Forms.TextBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.lbNgayTra = new System.Windows.Forms.Label();
@@ -50,8 +50,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.MaPTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cSoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayDen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayDi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,8 +84,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaPTP,
-            this.MaKH,
             this.cSoPhong,
+            this.MaKH,
             this.NgayDen,
             this.NgayDi,
             this.DonGia});
@@ -93,7 +93,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(770, 150);
             this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // lbMaKH
             // 
@@ -147,13 +148,13 @@
             this.lbDonGia.TabIndex = 9;
             this.lbDonGia.Text = "Đơn Giá";
             // 
-            // txtMaHD
+            // txMaPTP
             // 
-            this.txtMaHD.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaHD.Location = new System.Drawing.Point(132, 14);
-            this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(190, 25);
-            this.txtMaHD.TabIndex = 10;
+            this.txMaPTP.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txMaPTP.Location = new System.Drawing.Point(132, 14);
+            this.txMaPTP.Name = "txMaPTP";
+            this.txMaPTP.Size = new System.Drawing.Size(190, 25);
+            this.txMaPTP.TabIndex = 10;
             // 
             // txtMaKH
             // 
@@ -192,6 +193,7 @@
             this.button5.TabIndex = 21;
             this.button5.Text = "Xóa";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -213,7 +215,7 @@
             this.gbThongTinThuePhong.Controls.Add(this.lbNgayTra);
             this.gbThongTinThuePhong.Controls.Add(this.txtDonGia);
             this.gbThongTinThuePhong.Controls.Add(this.txtMaKH);
-            this.gbThongTinThuePhong.Controls.Add(this.txtMaHD);
+            this.gbThongTinThuePhong.Controls.Add(this.txMaPTP);
             this.gbThongTinThuePhong.Controls.Add(this.lbDonGia);
             this.gbThongTinThuePhong.Controls.Add(this.lbSoPhong);
             this.gbThongTinThuePhong.Controls.Add(this.lbNgayThue);
@@ -282,6 +284,7 @@
             this.button1.TabIndex = 30;
             this.button1.Text = "Sửa TT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -297,15 +300,10 @@
             // 
             // MaPTP
             // 
-            this.MaPTP.DataPropertyName = "MaHD";
+            this.MaPTP.DataPropertyName = "MaPTP";
             this.MaPTP.HeaderText = "Mã PTP";
             this.MaPTP.Name = "MaPTP";
             this.MaPTP.Width = 110;
-            // 
-            // MaKH
-            // 
-            this.MaKH.HeaderText = "Mã Khách Hàng";
-            this.MaKH.Name = "MaKH";
             // 
             // cSoPhong
             // 
@@ -313,16 +311,22 @@
             this.cSoPhong.HeaderText = "Số Phòng";
             this.cSoPhong.Name = "cSoPhong";
             // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.HeaderText = "Mã Khách Hàng";
+            this.MaKH.Name = "MaKH";
+            // 
             // NgayDen
             // 
-            this.NgayDen.DataPropertyName = "NgayBatDau";
+            this.NgayDen.DataPropertyName = "NgayThue";
             this.NgayDen.HeaderText = "Ngày Đến";
             this.NgayDen.Name = "NgayDen";
             this.NgayDen.Width = 140;
             // 
             // NgayDi
             // 
-            this.NgayDi.DataPropertyName = "NgayTraPhong";
+            this.NgayDi.DataPropertyName = "NgayTra";
             this.NgayDi.HeaderText = "Ngày Đi";
             this.NgayDi.Name = "NgayDi";
             this.NgayDi.Width = 140;
@@ -369,7 +373,7 @@
         private System.Windows.Forms.Label lbSoPhong;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbDonGia;
-        private System.Windows.Forms.TextBox txtMaHD;
+        private System.Windows.Forms.TextBox txMaPTP;
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.Label lbNgayTra;
@@ -383,8 +387,8 @@
         private System.Windows.Forms.DateTimePicker dtNgayBatDau;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPTP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn cSoPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayDen;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayDi;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;

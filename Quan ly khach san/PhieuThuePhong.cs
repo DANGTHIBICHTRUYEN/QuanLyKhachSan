@@ -31,30 +31,15 @@ namespace Quan_ly_khach_san
             HienThi();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
+        
 
         private void lbMaPTP_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+  
 
         private void btQuayLai_Click(object sender, EventArgs e)
         {
@@ -70,7 +55,7 @@ namespace Quan_ly_khach_san
 
         public void HienThi()
         {
-            string sqlSELECT = "Select MAHD, MaKH, NgayBatDau, NGAYTRAPHONG, SOPHONG, DONGIA FROM HOADON";
+            string sqlSELECT = "Select * FROM PHIEUTHUEPHONG";
             SqlCommand cmd = new SqlCommand(sqlSELECT, conn);
             SqlDataReader dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -81,14 +66,16 @@ namespace Quan_ly_khach_san
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string sqlINSERT = "INSERT INTO HOADON VALUES (@MAHD, @MAKH, @SOPHONG, @NGAYBATDAU, @NGAYTRAPHONG, @SONGAYTHUE, @DONGIA, @THANHTIEN)";
+            string dangduocthue = "Đang Được Thuê";
+            string sqlINSERT = "INSERT INTO PhieuThuePhong VALUES (@MaPTP, @SoPhong, @MaKH, @NgayThue, @NgayTra, @DonGia); " +
+                "UPDATE DSPHONG SET TinhTrang = N'Đang Được Thuê' WHERE SoPhong = @SoPhong;";
             SqlCommand cmd = new SqlCommand(sqlINSERT, conn);
-            cmd.Parameters.AddWithValue("MAHD", txtMaHD.Text);
-            cmd.Parameters.AddWithValue("NGAYBATDAU", dtNgayBatDau.Value.ToString());
-            cmd.Parameters.AddWithValue("SOPHONG", txtSoPhong.Text);
-            cmd.Parameters.AddWithValue("MAKH", txtMaKH.Text);
-            cmd.Parameters.AddWithValue("NGAYTRAPHONG", dtNgayKetThuc.Value.ToString());
-            cmd.Parameters.AddWithValue("DONGIA", txtDonGia.Text);
+            cmd.Parameters.AddWithValue("MaPTP", txMaPTP.Text);
+            cmd.Parameters.AddWithValue("SoPhong", txtSoPhong.Text);
+            cmd.Parameters.AddWithValue("MaKH", txtMaKH.Text);
+            cmd.Parameters.AddWithValue("NgayThue", dtNgayBatDau.Value);
+            cmd.Parameters.AddWithValue("NgayTra", dtNgayKetThuc.Value);
+            cmd.Parameters.AddWithValue("DonGia", txtDonGia.Text);
             cmd.ExecuteNonQuery();
             HienThi();
         }
@@ -96,6 +83,49 @@ namespace Quan_ly_khach_san
         private void dtNgayBatDau_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                txMaPTP.Text = row.Cells[0].Value.ToString();
+                txtSoPhong.Text = row.Cells[1].Value.ToString();
+                txtMaKH.Text = row.Cells[2].Value.ToString();
+                dtNgayBatDau.Text = row.Cells[3].Value.ToString();
+                dtNgayKetThuc.Text = row.Cells[4].Value.ToString();
+                txtDonGia.Text = row.Cells[5].Value.ToString();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sqlUPDATE = "UPDATE PhieuThuePhong SET  SoPhong =  @SoPhong, MaKH = @MaKH, NgayThue = @NgayThue, NgayTra=@NgayTra, DonGia = @DonGia WHERE MaPTP = @MaPTP;";
+            SqlCommand cmd = new SqlCommand(sqlUPDATE, conn);
+            cmd.Parameters.AddWithValue("MaPTP", txMaPTP.Text);
+            cmd.Parameters.AddWithValue("SoPhong", txtSoPhong.Text);
+            cmd.Parameters.AddWithValue("MaKH", txtMaKH.Text);
+            cmd.Parameters.AddWithValue("NgayThue", dtNgayBatDau.Value);
+            cmd.Parameters.AddWithValue("NgayTra", dtNgayKetThuc.Value);
+            int i = Convert.ToInt32(txtDonGia.Text);
+            cmd.Parameters.AddWithValue("DonGia", i);
+            cmd.ExecuteNonQuery();
+            HienThi();
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string SqlDELETE = "DELETE FROM PhieuThuePhong WHERE (MAPTP = '" + txMaPTP.Text + "')";
+            SqlCommand cmd = new SqlCommand(SqlDELETE, conn);
+            cmd.ExecuteNonQuery();
+            HienThi();
         }
     }
 }
