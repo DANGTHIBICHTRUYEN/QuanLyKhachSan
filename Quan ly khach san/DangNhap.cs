@@ -32,6 +32,7 @@ namespace Quan_ly_khach_san
         {
             string conString = ConfigurationManager.ConnectionStrings["QLKHACHSAN"].ConnectionString.ToString();
              conn = new SqlConnection(conString);
+            this.CenterToScreen();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -112,6 +113,21 @@ namespace Quan_ly_khach_san
             {
                 btDangNhap_Click(this, new EventArgs());
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit(); 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

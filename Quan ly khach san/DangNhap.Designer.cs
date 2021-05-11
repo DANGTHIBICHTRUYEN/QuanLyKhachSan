@@ -29,23 +29,24 @@ namespace Quan_ly_khach_san
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDangNhap));
             this.txMatKhau = new System.Windows.Forms.TextBox();
             this.txTaiKhoan = new System.Windows.Forms.TextBox();
             this.btDangNhap = new System.Windows.Forms.Button();
             this.lbTaiKhoan = new System.Windows.Forms.Label();
             this.lbMatKhau = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txMatKhau
             // 
             this.txMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txMatKhau.Location = new System.Drawing.Point(21, 83);
+            this.txMatKhau.Location = new System.Drawing.Point(33, 83);
             this.txMatKhau.Name = "txMatKhau";
             this.txMatKhau.PasswordChar = '*';
             this.txMatKhau.Size = new System.Drawing.Size(229, 23);
@@ -57,7 +58,7 @@ namespace Quan_ly_khach_san
             // 
             this.txTaiKhoan.BackColor = System.Drawing.SystemColors.Window;
             this.txTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txTaiKhoan.Location = new System.Drawing.Point(21, 38);
+            this.txTaiKhoan.Location = new System.Drawing.Point(33, 38);
             this.txTaiKhoan.Name = "txTaiKhoan";
             this.txTaiKhoan.Size = new System.Drawing.Size(229, 23);
             this.txTaiKhoan.TabIndex = 0;
@@ -65,16 +66,16 @@ namespace Quan_ly_khach_san
             // 
             // btDangNhap
             // 
-            this.btDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(64)))), ((int)(((byte)(52)))));
+            this.btDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
             this.btDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btDangNhap.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDangNhap.ForeColor = System.Drawing.Color.Transparent;
-            this.btDangNhap.Location = new System.Drawing.Point(140, 276);
+            this.btDangNhap.Location = new System.Drawing.Point(8, 225);
             this.btDangNhap.Name = "btDangNhap";
-            this.btDangNhap.Size = new System.Drawing.Size(145, 42);
+            this.btDangNhap.Size = new System.Drawing.Size(143, 42);
             this.btDangNhap.TabIndex = 2;
-            this.btDangNhap.Text = "Đăng nhập";
+            this.btDangNhap.Text = " Đăng nhập";
             this.btDangNhap.UseVisualStyleBackColor = false;
             this.btDangNhap.Click += new System.EventHandler(this.btDangNhap_Click);
             // 
@@ -110,66 +111,72 @@ namespace Quan_ly_khach_san
             this.groupBox1.Controls.Add(this.txTaiKhoan);
             this.groupBox1.Controls.Add(this.lbMatKhau);
             this.groupBox1.Controls.Add(this.txMatKhau);
-            this.groupBox1.Location = new System.Drawing.Point(13, 131);
+            this.groupBox1.Location = new System.Drawing.Point(8, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(273, 120);
+            this.groupBox1.Size = new System.Drawing.Size(289, 120);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox2
+            // label8
             // 
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Location = new System.Drawing.Point(13, 80);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(273, 45);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Bạn là?";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
+            this.label8.Location = new System.Drawing.Point(35, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(258, 32);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Quản lý khách sạn";
             // 
-            // radioButton1
+            // button1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Quản lý";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(49)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(157, 225);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 42);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // radioButton2
+            // pictureBox1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(79, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Thu Ngân";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(313, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // fDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(293, 330);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(575, 279);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btDangNhap);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "fDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dang nhap";
+            this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fDangNhap_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -181,9 +188,9 @@ namespace Quan_ly_khach_san
         private System.Windows.Forms.Label lbTaiKhoan;
         private System.Windows.Forms.Label lbMatKhau;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

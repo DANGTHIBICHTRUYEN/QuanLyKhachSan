@@ -59,5 +59,15 @@ namespace Quan_ly_khach_san.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap abstract_blur_luxury_hotel_lobby_background_1339_98449 {
+            get {
+                object obj = ResourceManager.GetObject("abstract-blur-luxury-hotel-lobby-background_1339-98449", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

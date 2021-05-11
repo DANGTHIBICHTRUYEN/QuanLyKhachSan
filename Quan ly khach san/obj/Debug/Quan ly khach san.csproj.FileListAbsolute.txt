@@ -15,3 +15,17 @@ C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly k
 C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.pdb
 C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fMain.resources
 C:\Users\10xcr\Source\Repos\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDoanhThu.resources
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDangNhap.resources
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDanhSachKhachHang.resources
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fDanhSachPhong.resources
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.Properties.Resources.resources
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.exe
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan ly khach san.pdb
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.fMain.resources
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\bin\Debug\Quan ly khach san.exe.config
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\bin\Debug\Quan ly khach san.exe
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\bin\Debug\Quan ly khach san.pdb
+C:\Users\Admin\source\repos\10xcr4zy01\QuanLyKhachSan\Quan ly khach san\obj\Debug\Quan_ly_khach_san.Thue.resources

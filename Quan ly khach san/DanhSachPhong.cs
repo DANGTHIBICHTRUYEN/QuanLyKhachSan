@@ -14,17 +14,13 @@ namespace Quan_ly_khach_san
 {
     public partial class fDanhSachPhong : Form
     {
+
+        SqlConnection conn;
+
         public fDanhSachPhong()
         {
             InitializeComponent();
-        }
-
-        //SqlConnection conn;
-
-        private void gbThongTinKhachHang_Enter(object sender, EventArgs e)
-        {
-
-        }
+        } 
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -43,25 +39,70 @@ namespace Quan_ly_khach_san
            
         }
 
-
-
-        /*private void fDanhSachPhong_Load(object sender, EventArgs e)
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string conString = ConfigurationManager.ConnectionStrings["QLKHACHSAN"].ConnectionString.ToString();
-            conn = new SqlConnection(conString);
-            conn.Open();
-            HienThi();
-        }*/
 
-        /*public void HienThi()
-        {
+        }
+
+
+        public void HienThi()
+        { 
             string sqlSELECT = "Select * FROM DSPHONG";
             SqlCommand cmd = new SqlCommand(sqlSELECT, conn);
             SqlDataReader dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(dr);
-            dataGridView1.DataSource = dt;
-        }*/
+          
+        }
+
+        private void fDanhSachPhong_Load_1(object sender, EventArgs e)
+        {
+            string conString = ConfigurationManager.ConnectionStrings["QLKHACHSAN"].ConnectionString.ToString();
+            conn = new SqlConnection(conString);
+            conn.Open();
+            this.CenterToScreen();
+            HienThi();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txMaKhachHang_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         /*private void button6_Click(object sender, EventArgs e)
         {
