@@ -19,7 +19,7 @@ namespace Quan_ly_khach_san
             InitializeComponent();
         }
 
-        SqlConnection conn;
+        //SqlConnection conn;
 
         private void gbThongTinKhachHang_Enter(object sender, EventArgs e)
         {
@@ -33,17 +33,27 @@ namespace Quan_ly_khach_san
             this.Close();
         }
 
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+           
+        }
 
 
-        private void fDanhSachPhong_Load(object sender, EventArgs e)
+
+        /*private void fDanhSachPhong_Load(object sender, EventArgs e)
         {
             string conString = ConfigurationManager.ConnectionStrings["QLKHACHSAN"].ConnectionString.ToString();
             conn = new SqlConnection(conString);
             conn.Open();
             HienThi();
-        }
+        }*/
 
-        public void HienThi()
+        /*public void HienThi()
         {
             string sqlSELECT = "Select * FROM DSPHONG";
             SqlCommand cmd = new SqlCommand(sqlSELECT, conn);
@@ -51,9 +61,9 @@ namespace Quan_ly_khach_san
             DataTable dt = new DataTable();
             dt.Load(dr);
             dataGridView1.DataSource = dt;
-        }
+        }*/
 
-        private void button6_Click(object sender, EventArgs e)
+        /*private void button6_Click(object sender, EventArgs e)
         {
             string sqlINSERT = "INSERT INTO DSPHONG VALUES (@SoPhong, @LoaiPhong, @DonGia, @GhiChu, @TinhTrang)";
             SqlCommand cmd = new SqlCommand(sqlINSERT, conn);
@@ -114,5 +124,10 @@ namespace Quan_ly_khach_san
             }
             
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }*/
     }
 }

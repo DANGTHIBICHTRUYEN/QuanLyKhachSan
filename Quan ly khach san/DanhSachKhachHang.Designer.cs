@@ -47,11 +47,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gbThongTinKhachHang = new System.Windows.Forms.GroupBox();
-            this.btSua = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btXoa = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +55,11 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuocTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiKhach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbThongTinKhachHang = new System.Windows.Forms.GroupBox();
+            this.btSua = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbThongTinKhachHang.SuspendLayout();
             this.SuspendLayout();
@@ -115,7 +115,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.DarkSalmon;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(433, 89);
+            this.label5.Location = new System.Drawing.Point(422, 90);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 19);
             this.label5.TabIndex = 5;
@@ -200,7 +200,7 @@
             this.cbxGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbxGioiTinh.Location = new System.Drawing.Point(532, 18);
+            this.cbxGioiTinh.Location = new System.Drawing.Point(532, 19);
             this.cbxGioiTinh.Name = "cbxGioiTinh";
             this.cbxGioiTinh.Size = new System.Drawing.Size(190, 21);
             this.cbxGioiTinh.TabIndex = 18;
@@ -235,7 +235,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.DarkSalmon;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(40, 125);
+            this.label10.Location = new System.Drawing.Point(14, 129);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 19);
             this.label10.TabIndex = 24;
@@ -259,6 +259,54 @@
             this.dataGridView1.TabIndex = 25;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.HeaderText = "Mã KH";
+            this.MaKH.Name = "MaKH";
+            // 
+            // TenKH
+            // 
+            this.TenKH.DataPropertyName = "TenKH";
+            this.TenKH.HeaderText = "Tên Khách Hàng";
+            this.TenKH.Name = "TenKH";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.HeaderText = "SĐT";
+            this.SDT.Name = "SDT";
+            // 
+            // CMND
+            // 
+            this.CMND.DataPropertyName = "CMND";
+            this.CMND.HeaderText = "CMND";
+            this.CMND.Name = "CMND";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            // 
+            // QuocTich
+            // 
+            this.QuocTich.DataPropertyName = "QuocTich";
+            this.QuocTich.HeaderText = "Quốc Tịch";
+            this.QuocTich.Name = "QuocTich";
+            // 
+            // LoaiKhach
+            // 
+            this.LoaiKhach.DataPropertyName = "LoaiKhach";
+            this.LoaiKhach.HeaderText = "Loại Khách";
+            this.LoaiKhach.Name = "LoaiKhach";
             // 
             // gbThongTinKhachHang
             // 
@@ -335,54 +383,6 @@
             this.button2.Text = "Quay lại";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // MaKH
-            // 
-            this.MaKH.DataPropertyName = "MaKH";
-            this.MaKH.HeaderText = "Mã KH";
-            this.MaKH.Name = "MaKH";
-            // 
-            // TenKH
-            // 
-            this.TenKH.DataPropertyName = "TenKH";
-            this.TenKH.HeaderText = "Tên Khách Hàng";
-            this.TenKH.Name = "TenKH";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "SĐT";
-            this.SDT.Name = "SDT";
-            // 
-            // CMND
-            // 
-            this.CMND.DataPropertyName = "CMND";
-            this.CMND.HeaderText = "CMND";
-            this.CMND.Name = "CMND";
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.Name = "DiaChi";
-            // 
-            // QuocTich
-            // 
-            this.QuocTich.DataPropertyName = "QuocTich";
-            this.QuocTich.HeaderText = "Quốc Tịch";
-            this.QuocTich.Name = "QuocTich";
-            // 
-            // LoaiKhach
-            // 
-            this.LoaiKhach.DataPropertyName = "LoaiKhach";
-            this.LoaiKhach.HeaderText = "Loại Khách";
-            this.LoaiKhach.Name = "LoaiKhach";
             // 
             // fDanhSachKhachHang
             // 
