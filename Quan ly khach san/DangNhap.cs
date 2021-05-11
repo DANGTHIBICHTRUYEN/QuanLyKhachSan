@@ -31,8 +31,9 @@ namespace Quan_ly_khach_san
         private void Form1_Load(object sender, EventArgs e)
         {
             string conString = ConfigurationManager.ConnectionStrings["QLKHACHSAN"].ConnectionString.ToString();
-             conn = new SqlConnection(conString);
+            conn = new SqlConnection(conString);
             this.CenterToScreen();
+            txTaiKhoan.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)

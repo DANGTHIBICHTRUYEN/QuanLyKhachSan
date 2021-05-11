@@ -123,7 +123,7 @@ namespace Quan_ly_khach_san
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(112)))), ((int)(((byte)(85)))));
-            this.label8.Location = new System.Drawing.Point(35, 19);
+            this.label8.Location = new System.Drawing.Point(23, 33);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(258, 32);
             this.label8.TabIndex = 23;

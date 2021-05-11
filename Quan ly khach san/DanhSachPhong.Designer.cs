@@ -52,14 +52,14 @@ namespace Quan_ly_khach_san
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
             this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(22, 618);
+            this.button2.Location = new System.Drawing.Point(22, 610);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 36);
+            this.button2.Size = new System.Drawing.Size(136, 44);
             this.button2.TabIndex = 38;
-            this.button2.Text = "Quay lại";
+            this.button2.Text = "Trở về";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -69,7 +69,7 @@ namespace Quan_ly_khach_san
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 95);
             this.button1.TabIndex = 39;
-            this.button1.Text = "button1";
+            this.button1.Text = "101";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -79,7 +79,7 @@ namespace Quan_ly_khach_san
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(147, 95);
             this.button3.TabIndex = 40;
-            this.button3.Text = "button3";
+            this.button3.Text = "102";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -102,7 +102,7 @@ namespace Quan_ly_khach_san
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(147, 95);
             this.button4.TabIndex = 41;
-            this.button4.Text = "button4";
+            this.button4.Text = "103";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -111,7 +111,7 @@ namespace Quan_ly_khach_san
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(147, 95);
             this.button5.TabIndex = 42;
-            this.button5.Text = "button5";
+            this.button5.Text = "104";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -134,7 +134,7 @@ namespace Quan_ly_khach_san
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(147, 95);
             this.button6.TabIndex = 42;
-            this.button6.Text = "button6";
+            this.button6.Text = "203";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -143,7 +143,7 @@ namespace Quan_ly_khach_san
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(147, 95);
             this.button7.TabIndex = 41;
-            this.button7.Text = "button7";
+            this.button7.Text = "203";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -152,7 +152,7 @@ namespace Quan_ly_khach_san
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(147, 95);
             this.button8.TabIndex = 39;
-            this.button8.Text = "button8";
+            this.button8.Text = "201";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
@@ -161,7 +161,7 @@ namespace Quan_ly_khach_san
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(147, 95);
             this.button9.TabIndex = 40;
-            this.button9.Text = "button9";
+            this.button9.Text = "202";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -184,7 +184,7 @@ namespace Quan_ly_khach_san
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(147, 95);
             this.button10.TabIndex = 42;
-            this.button10.Text = "button10";
+            this.button10.Text = "304";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -193,7 +193,7 @@ namespace Quan_ly_khach_san
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(147, 95);
             this.button11.TabIndex = 41;
-            this.button11.Text = "button11";
+            this.button11.Text = "303";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -202,7 +202,7 @@ namespace Quan_ly_khach_san
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(147, 95);
             this.button12.TabIndex = 39;
-            this.button12.Text = "button12";
+            this.button12.Text = "301";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button13
@@ -211,7 +211,7 @@ namespace Quan_ly_khach_san
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(147, 95);
             this.button13.TabIndex = 40;
-            this.button13.Text = "button13";
+            this.button13.Text = "302";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // fDanhSachPhong
@@ -219,7 +219,7 @@ namespace Quan_ly_khach_san
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(993, 666);
+            this.ClientSize = new System.Drawing.Size(909, 666);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
